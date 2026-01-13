@@ -16,7 +16,7 @@ def print_string(text):
 
 @app.route('/count/<int:number>')
 def count(number):
-    result = '\n'.join(str(i) for i in range(number)) + '\n'
+    result = '\n'.join(str(i) for i in  range(number)) + '\n'
     return result
 
 @app.route('/math/<int:num1>/<operation>/<int:num2>')
